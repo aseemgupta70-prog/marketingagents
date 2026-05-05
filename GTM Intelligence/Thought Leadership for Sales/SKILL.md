@@ -1,7 +1,7 @@
 ---
 name: gtm-intelligence
 description: "Use this skill to operate the GTM Intelligence system — an automated pipeline that monitors public accounting communities (Reddit, HackerNews, RSS), scores trending buyer pain themes using NLP, and generates non-salesy thought-leadership content (LinkedIn articles, short posts, AE digests, HTML banners) posted to Slack. Trigger this skill whenever the user asks to: run the content pipeline, generate LinkedIn or accounting articles, check trending accounting topics, post content to Slack #linkedin-thoughtleadership, operate the weekly GTM content automation, build the article summary deck, or troubleshoot why a scheduled run didn't fire. Project lives at: C:\\Aseem Backup\\GTM Engineering\\02. Claude\\01. Claude Code\\gtm-intelligence\\"
-license: Proprietary — Docyt AI internal use only
+license: Proprietary — "Placeholder Company" AI internal use only
 ---
 
 # GTM Intelligence Skill
