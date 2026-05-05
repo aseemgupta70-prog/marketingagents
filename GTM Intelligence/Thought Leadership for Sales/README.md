@@ -28,7 +28,7 @@ GTM Intelligence solves one problem: **AEs should know what buyers are strugglin
 
 The system runs weekly (Wednesdays at 7am), ingests posts from accounting communities (Reddit, HackerNews, RSS feeds), applies NLP scoring to surface the top 6 pain themes, then uses Claude AI to generate 6 LinkedIn articles, 6 short posts, and 6 visual banners — all posted automatically to Slack `#linkedin-thoughtleadership`.
 
-**Built for:** Docyt AI GTM / Marketing team  
+**Built for:** "Placeholder Company" AI GTM / Marketing team  
 **AI Model:** Claude claude-opus-4-6 (Anthropic) with adaptive thinking  
 **Cadence:** Weekly automated runs + on-demand CLI  
 
@@ -515,11 +515,11 @@ node build-deck.js
 | 8 | Theme: ERP & Software Integrations |
 | 9 | Theme: Cash Flow & Financial Reporting |
 | 10 | Key Buyer Signals — AE-ready quotes |
-| 11 | Docyt AI Positioning — practitioner voice |
+| 11 | "Placeholder Company" AI Positioning — practitioner voice |
 | 12 | Next Steps — pipeline schedule + action items |
 
 **Design:**  `#0A1628` navy background · `#4A9EF5` blue accents · Calibri font · LAYOUT_16x9
 
 ---
 
-*Built by Docyt AI GTM Engineering · Powered by Anthropic Claude*
+
