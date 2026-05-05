@@ -1,9 +1,9 @@
-# Docyt AI — Enterprise Pricing Proposal System
+# Test Company AI — Enterprise Pricing Proposal System
 ### Hotel Management Company (ICP2) · MEDDPIC-Driven · Sales-Ready
 
 > **Version:** 2.0 · May 2026  
-> **Author:** Aseem · Docyt Revenue Operations  
-> **Status:** Production-ready · Used for Coury Hospitality $700K close
+> **Author:** Aseem · Test Company Revenue Operations  
+> **Status:** Production-ready · Used for Test Hospitality $700K close
 
 ---
 
@@ -15,7 +15,7 @@
 4. [Pricing Framework](#4-pricing-framework)
 5. [MEDDPIC Intelligence Layer](#5-meddpic-intelligence-layer)
 6. [Proposal Structure — 15-Slide Playbook](#6-proposal-structure--15-slide-playbook)
-7. [Branding Guidelines](#7-branding-guidelines-docyt-brand-system)
+7. [Branding Guidelines](#7-branding-guidelines-Test Company-brand-system)
 8. [Scripts & Code](#8-scripts--code)
 9. [QA Process](#9-qa-process)
 10. [Deal Reference — Coury Hospitality](#10-deal-reference--coury-hospitality)
@@ -26,7 +26,7 @@
 
 ## 1. System Overview
 
-This repository packages the complete workflow for generating **sales-ready enterprise pricing proposals** for U.S. hotel management companies (Docyt ICP2). The system:
+This repository packages the complete workflow for generating **sales-ready enterprise pricing proposals** for U.S. hotel management companies (Test Company ICP2). The system:
 
 - **Pulls live deal intelligence** from Grain AI notetaker transcripts
 - **Analyzes MEDDPIC signals** automatically from meeting notes
@@ -123,7 +123,7 @@ This repository packages the complete workflow for generating **sales-ready ente
                                  ▼
   ┌─────────────────────────────────────────────────────────────────┐
   │                       OUTPUT                                     │
-  │  Docyt_{Prospect}_Proposal_2026.pptx   → AE delivery             │
+  │  Test Company_{Prospect}_Proposal_2026.pptx   → AE delivery             │
   └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -172,7 +172,7 @@ Grain.search_meetings({
 
 ### 3.2 2026_Hotel_Pricing.xlsx
 
-**Purpose:** Source of truth for Docyt's current hospitality pricing tiers.
+**Purpose:** Source of truth for Test Company's current hospitality pricing tiers.
 
 **File location:** `/mnt/project/2026_Hotel_Pricing.xlsx`
 
@@ -362,8 +362,8 @@ C — CHAMPION
 // 3. Fetch notes from top 2 meetings (onboarding/commercial + systems integration)
 
 // Highest-value meeting types for MEDDPIC:
-//   "Docyt // [Company]"           — commercial/pricing call
-//   "Docyt onboarding timelines"   — implementation + contract discussion
+//   "Test Company // [Company]"           — commercial/pricing call
+//   "Test Company onboarding timelines"   — implementation + contract discussion
 //   "Systems Integration"          — competitive stack details
 ```
 
@@ -378,7 +378,7 @@ C — CHAMPION
 | 03 | Portfolio Overview | Gold top | Property/entity stats, M&A context, stakeholder map, contract window |
 | 04 | The Problem | Pink top | Current 3-vendor stack visual + 6 identified pain points |
 | 05 | MEDDPIC Intelligence | Cyan top | 7-row MEDDPIC table sourced from Grain notes |
-| 06 | Before / After Cost | Gold top | Side-by-side cost architecture: current stack vs Docyt all-in |
+| 06 | Before / After Cost | Gold top | Side-by-side cost architecture: current stack vs Test Company all-in |
 | 07 | Investment Summary | Gold top | 4 tier cards with discount badges + add-ons breakdown |
 | 08 | ROI Analysis | Cyan top | 4 ROI callouts + 3-year benefit/investment table |
 | 09 | 3-Year Financial Model | Cyan top | Native bar chart (pptxgenjs) + M&A scaling scenarios |
@@ -391,7 +391,7 @@ C — CHAMPION
 
 ---
 
-## 7. Branding Guidelines — Docyt Brand System
+## 7. Branding Guidelines — Test Company Brand System
 
 ### Color Palette
 
@@ -423,9 +423,9 @@ const BRAND = {
 
 ### Logo Construction
 
-Docyt's logo is constructed from:
+Test Company's logo is constructed from:
 1. **Three colored bars** (left side): Gold → Pink → Cyan (vertical rectangles, `rx=3` rounded, 12px wide, 4px gap)
-2. **Wordmark**: `"docyt"` in Arial Black / bold, 36pt, adjacent to bars
+2. **Wordmark**: `"Test Company"` in Arial Black / bold, 36pt, adjacent to bars
 3. **Dark bg version**: White wordmark
 4. **Light bg version**: Navy wordmark (`0D1B40`)
 
@@ -436,7 +436,7 @@ const logoSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 60">
   <rect x="16" y="8" width="12" height="44" rx="3" fill="#FF6790"/>
   <rect x="32" y="8" width="12" height="44" rx="3" fill="#03C5D7"/>
   <text x="54" y="46" font-family="Arial Black, Arial" font-weight="900"
-        font-size="36" fill="#FFFFFF" letter-spacing="-1">docyt</text>
+        font-size="36" fill="#FFFFFF" letter-spacing="-1">Test Company</text>
 </svg>`;
 const logoB64 = "image/svg+xml;base64," + Buffer.from(logoSvg).toString("base64");
 
@@ -470,7 +470,7 @@ slide.addImage({ data: logoB64, x: 0.3, y: 0.15, w: 1.4, h: 0.32 });
 node coury_proposal.js
 
 # Output
-# ✅  Deck written: Docyt_Coury_Hospitality_Proposal_2026.pptx
+# ✅  Deck written: Test Company_Coury_Hospitality_Proposal_2026.pptx
 ```
 
 **Script structure:**
@@ -639,9 +639,9 @@ echo "  - Low-contrast text on colored backgrounds"
 ### Deal Summary
 
 ```
-Account:        Coury Hospitality (couryh.com)
+Account:        Test Hospitality (test.com)
 HQ:             Dallas, TX
-Portfolio:      15 properties, 43–45 entities (all provisioned in Docyt)
+Portfolio:      15 properties, 43–45 entities (all provisioned in Test Company)
 Pilot property: Hard Rock Hotel Dallas (complex full-service flagship)
 ACV:            $700,000/year (discounted from $750,000 list)
 Status:         Implementation contract signed; subscription contract pending
@@ -654,21 +654,15 @@ M&A upside:     86-property acquisition in progress → potential ~$3.5M ACV
 
 | Name | Role | Scope |
 |---|---|---|
-| Dustin ODonnell | CFO/VP — Economic Buyer | dodonnell@couryh.com |
-| Bo Patel | Owner/Stakeholder | bo@couryh.com |
-| Jessica Lamont | Controller — Champion | jlamont@couryh.com |
-| Sidharth Saxena | Docyt CEO — AE | sid@docyt.com |
-| Rahul Kumar | Dir. Strategic Partnerships | rahul@docyt.com |
-| Radhika Makwana | Onboarding Lead | radhika.makwana@docyt.com |
-| Sugam Pandey | Engineering Lead | sugam@docyt.com |
+| test | CFO/VP — Economic Buyer | test@test.com |
 
 ### Systems Being Replaced
 
 | System | Purpose | Replaced By |
 |---|---|---|
-| M3 | GL accounting | Docyt AI Bookkeeping module |
-| ProfitSword / Actabl | BI & forecasting | Docyt Business Intelligence + Advanced Forecasting |
-| (BirchStreet retained) | AP/bill payments (Avendra rebate) | Integration — Docyt pulls bills, marks as paid |
+| M3 | GL accounting | Test Company AI Bookkeeping module |
+| ProfitSword / Actabl | BI & forecasting | Test Company Business Intelligence + Advanced Forecasting |
+| (BirchStreet retained) | AP/bill payments (Avendra rebate) | Integration — Test Company pulls bills, marks as paid |
 
 ### Integration Roadmap
 
@@ -678,21 +672,21 @@ BirchStreet     — AP integration (Tyler Garrett contact)
 Delphi          — Forecasting data (priority: Hard Rock)
 Marriott OTB    — Forward-looking occupancy data
 Hilton OTB      — Forward-looking occupancy data
-PMS (Hard Rock) — Revenue feed into Docyt
+PMS (Hard Rock) — Revenue feed into Test Company
 Bank feeds      — All 43 entities (pending activation)
 ```
 
 ### Key Dates
 
 ```
-May 8     — Jessica delivers Hard Rock COA to Docyt
-May 22    — System review call (Dustin + Docyt team)
+May 8     — Jessica delivers Hard Rock COA to Test Company
+May 22    — System review call (Dustin + Test Company team)
 May–June  — On-site engineering deployment, Dallas (1–2 weeks)
 June 1    — Parallel run begins
 June 30   — ProfitSword contract ends
 July 1    — Hard Rock go-live (HARD deadline)
 Q3 2026   — Full 15-property rollout
-Q4 2026   — SOX audit (Docyt simplifies vendor surface)
+Q4 2026   — SOX audit (Test Company simplifies vendor surface)
 ```
 
 ---
@@ -772,7 +766,7 @@ node proposal.js
 ## 12. File Index
 
 ```
-docyt-pricing-proposal-system/
+Test Company-pricing-proposal-system/
 │
 ├── README.md                                  ← This file
 │
@@ -785,10 +779,10 @@ docyt-pricing-proposal-system/
 │   └── 2026_Hotel_Pricing.xlsx               ← Source of truth for pricing tiers (read-only)
 │
 ├── output/
-│   └── Docyt_Coury_Hospitality_Proposal_2026.pptx  ← Final deliverable
+│   └── Test Company_Coury_Hospitality_Proposal_2026.pptx  ← Final deliverable
 │
 └── docs/
-    ├── brand_colors.md                        ← Docyt color reference
+    ├── brand_colors.md                        ← Test Company color reference
     ├── meddpic_template.md                    ← MEDDPIC extraction template
     └── slide_design_rules.md                  ← Slide layout conventions
 ```
@@ -797,7 +791,7 @@ docyt-pricing-proposal-system/
 
 ## Appendix A — Competitive Positioning Reference
 
-| Capability | Docyt | M3 | ProfitSword | QuickBooks |
+| Capability | Test Company | M3 | ProfitSword | QuickBooks |
 |---|---|---|---|---|
 | AI-Powered GL Coding | ✓ | ~ | ✗ | ✗ |
 | Real-Time Revenue Reconciliation | ✓ | ✗ | ~ | ✗ |
@@ -817,7 +811,7 @@ docyt-pricing-proposal-system/
 ## Appendix B — ROI Model Assumptions
 
 ```
-Direct software savings:    M3 + ProfitSword (estimated) vs Docyt ACV
+Direct software savings:    M3 + ProfitSword (estimated) vs Test Company ACV
 Labor efficiency:           2 FTE redeployed from manual reconciliation work
                             Assumed at $70K/FTE = $140K/year
 Revenue leakage recovery:   1% of gross revenue caught by daily reconciliation
@@ -825,13 +819,12 @@ Revenue leakage recovery:   1% of gross revenue caught by daily reconciliation
 SOX simplification:         External audit cost reduction (2 fewer vendor SOX audits)
                             Estimated at $60K–$90K/year saved
 
-M&A multiplier (Yr 2–3):    All scaling assumptions use Docyt entities already provisioned.
+M&A multiplier (Yr 2–3):    All scaling assumptions use Test Company entities already provisioned.
                             No re-implementation cost for acquired properties.
                             Per-property cost declines at scale (volume discount territory).
 ```
 
 ---
 
-*Document maintained by Docyt Revenue Operations. Update pricing assumptions quarterly against `2026_Hotel_Pricing.xlsx`. Update competitive matrix as M3/ProfitSword/Actabl release new features.*
+*Document maintained by Test Company Revenue Operations. Update pricing assumptions quarterly against `2026_Hotel_Pricing.xlsx`. Update competitive matrix as M3/ProfitSword/Actabl release new features.*
 
-*For deal-specific questions: rahul@docyt.com | sid@docyt.com*
